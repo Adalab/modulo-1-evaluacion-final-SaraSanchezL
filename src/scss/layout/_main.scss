@@ -1,0 +1,102 @@
+.containertitle {
+  width: 40%;
+}
+.sectionlooking {
+  margin-left: 15px;
+  &__tips {
+    color: #8ccbea;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    margin: 30px 0px 2px;
+  }
+  &__secuntitle {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    /* word-spacing: 2vw; */
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    width: 75px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: solid #f26002 2px;
+    text-align: center;
+    line-height: 38px;
+    margin-bottom: 45px;
+    &--link {
+      color: #f26002;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      padding: 20px;
+    }
+  }
+}
+
+.sectionreasons {
+  background-color: #eff9ff;
+  text-align: center;
+
+  &__secuntitle {
+    margin: 0px 15px 0px 15px;
+    padding: 30px 0px 40px;
+    font-size: 24px;
+    font-family: "Roboto Slab", serif;
+  }
+  &__btn {
+    margin: 25px 90px 60px;
+    width: 185px;
+    height: 45px;
+    border-radius: 20px;
+    border: solid #f26002 1px;
+    background-color: #f26002;
+    &--link {
+      color: #ffffff;
+      font-size: 20px;
+      font-family: "Roboto", sans-serif;
+      padding: 20px;
+    }
+  }
+}
+
+.sectioncontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px 120px 120px;
+  text-align: center;
+}
+.article1 {
+  grid-row-start: 1;
+  text-align: center;
+  margin: 0px 70px;
+}
+.article2 {
+  grid-row-start: 2;
+  text-align: center;
+  margin: 0px 70px;
+}
+.article3 {
+  grid-row-start: 3;
+  text-align: center;
+  margin: 0px 70px;
+}
+.articletitle {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  padding: 10px;
+}
+.articletext {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+}
+
+/*revisar links, enunciado, medidas */
