@@ -3,41 +3,87 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.containernav {
+  justify-content: center;
+}
+.iconup {
+  background-color: #ffffff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 55px;
+  margin: 0px 25px;
+  transform: translateY(-50%);
+}
+.iconlink {
+  padding: 10px;
+}
+.nav {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.link {
+  color: #ffffff;
+  padding: 10px;
+  line-height: 2;
+}
 
-  &__iconup {
-    background-color: #ffffff;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    text-align: center;
-    line-height: 55px;
-    transform: translateY(-50%);
-    &--link {
-      padding: 10px;
-    }
-  }
-  &__nav {
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    &--link {
-      color: #ffffff;
-      padding: 10px;
-      line-height: 2;
-    }
-  }
-  &__container {
-    margin-top: 10px;
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    color: #ffffff;
-    text-align: center;
-    line-height: 2;
-  }
+.container {
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2;
 }
 .heart {
   color: red;
+}
+
+/* Mediaqueries 768px y 1200px */
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px 80px;
+  }
+  .containernav {
+    order: 2;
+    width: 200px;
+    text-align: start;
+  }
+  .iconup {
+    position: relative;
+    left: 35%;
+    transform: translateY(-50%);
+  }
+  .containersocial {
+    order: 1;
+    height: 140px;
+  }
+  .nav {
+    text-align: start;
+  }
+  .container {
+    order: 3;
+    text-align: start;
+    height: 140px;
+    line-height: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    justify-content: center;
+  }
+  .containernav {
+    width: 160px;
+    margin: 0px 50px 0px 70px;
+  }
 }
