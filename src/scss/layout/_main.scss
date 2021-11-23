@@ -1,4 +1,5 @@
-/* Seccion uno*/
+/* Seccion uno Looking*/
+
 .containertitle {
   width: 40%;
   @media (min-width: 768px) {
@@ -16,13 +17,13 @@
   &__tips {
     color: #8ccbea;
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    font-family: $fontText;
     margin-bottom: 2px;
   }
   &__secuntitle {
     font-size: 24px;
     text-transform: capitalize;
-    font-family: "Roboto Slab", serif;
+    font-family: $fontTitle;
     margin-bottom: 15px;
     @media (min-width: 768px) {
       font-size: 26px;
@@ -33,24 +34,28 @@
   }
   &__text {
     font-size: 18px;
-    font-family: "Roboto", sans-serif;
+    font-family: $fontText;
     color: #4a4a4a;
     margin-bottom: 30px;
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       font-size: 20px;
     }
   }
   &__btn {
     width: 75px;
     height: 45px;
-    background-color: #ffffff;
+    background-color: $colorTitle;
     border-radius: 20px;
-    border: solid #f26002 2px;
+    border: solid $colorBtn 2px;
     text-align: center;
     line-height: 38px;
     margin-bottom: 30px;
+    transition: background-color ease 2s;
+    &:hover {
+      background-color: purple;
+    }
     @media (min-width: 768px) {
-      width: 91px;
+      width: 90px;
       height: 45px;
       margin: 0;
     }
@@ -60,16 +65,23 @@
       margin: 0;
     }
     &--link {
-      color: #f26002;
+      color: $colorBtn;
       font-size: 20px;
-      font-family: "Roboto", sans-serif;
+      font-family: $fontText;
       font-weight: 500;
       padding: 20px;
+      transition: color ease 2s, font-size linear 3s;
+      &:hover {
+        color: white;
+        font-size: 25px;
+      }
     }
   }
 }
 
-/* Seccion dos*/
+/* Seccion dos Reasons*/
+
+/* Title and Button */
 
 .sectionreasons {
   background-color: #eff9ff;
@@ -78,8 +90,9 @@
   &__secuntitle {
     margin: 0px 15px 0px 15px;
     padding: 30px 0px 45px;
+    text-transform: capitalize;
     font-size: 24px;
-    font-family: "Roboto Slab", serif;
+    font-family: $fontTitle;
     @media (min-width: 768px) {
       font-size: 26px;
       margin: 0px 160px;
@@ -95,8 +108,13 @@
     width: 185px;
     height: 45px;
     border-radius: 20px;
-    border: solid #f26002 1px;
-    background-color: #f26002;
+    border: solid $colorBtn 1px;
+    background-color: $colorBtn;
+    transition: background-color ease-in 2s, border-radius linear 3s;
+    &:hover {
+      background-color: royalblue;
+      border-radius: 0%;
+    }
     @media (min-width: 768px) {
       width: 210px;
       height: 45px;
@@ -106,15 +124,21 @@
       height: 45px;
     }
     &--link {
-      color: #ffffff;
+      color: $colorTitle;
       font-size: 20px;
-      font-family: "Roboto", sans-serif;
+      font-family: $fontText;
       padding: 20px;
+      transition: color ease-out 2s;
+      &:hover {
+        color: yellow;
+      }
     }
   }
 }
 
-.sectioncontainer {
+/* Articulos */
+
+.articlecontainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 120px 120px 120px;
@@ -126,42 +150,38 @@
     padding: 0px 30px;
   }
   @media (min-width: 1200px) {
-    padding: 0px 85px;
+    padding: 0px 80px;
   }
 }
 .article1 {
   grid-row-start: 1;
   text-align: center;
-  margin: 0px 70px;
   @media (min-width: 768px) {
     grid-column-start: 1;
     grid-row-start: 1;
-    margin: 0;
+    margin-right: 10px;
   }
 }
 .article2 {
   grid-row-start: 2;
   text-align: center;
-  margin: 0px 70px;
   @media (min-width: 768px) {
     grid-column-start: 2;
     grid-row-start: 1;
-    margin: 0;
   }
 }
 .article3 {
   grid-row-start: 3;
   text-align: center;
-  margin: 0px 70px;
   @media (min-width: 768px) {
     grid-column-start: 3;
     grid-row-start: 1;
-    margin: 0;
+    margin-left: 10px;
   }
 }
 .articletitle {
   font-size: 18px;
-  font-family: "Roboto Slab", serif;
+  font-family: $fontTitle;
   padding: 10px;
   @media (min-width: 768px) {
     font-size: 24px;
@@ -169,12 +189,12 @@
 }
 .articletext {
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-family: $fontText;
   padding-bottom: 50px;
   @media (min-width: 768px) {
     font-size: 20px;
+  }
+  @media (min-width: 1200px) {
     font-weight: 500;
   }
 }
-
-/*revisar links, enunciado, medidas */

@@ -34,12 +34,12 @@
       transform: translateY(5%);
     }
     &--maintitle {
-      color: #ffffff;
+      color: $colorTitle;
       font-size: 42px;
       text-transform: uppercase;
       text-align: center;
       margin-bottom: 10px;
-      font-family: "Roboto Slab", serif;
+      font-family: $fontTitle;
       @media (min-width: 768px) {
         font-size: 80px;
         margin-bottom: 15px;
@@ -49,18 +49,17 @@
       }
     }
     &--text {
-      color: #ffffff;
+      color: $colorTitle;
       font-size: 16px;
       text-align: center;
-      font-family: "Roboto", sans-serif;
+      font-family: $fontText;
       @media (min-width: 768px) {
         font-size: 24px;
-        margin-bottom: 15px;
       }
     }
   }
   &__icondown {
-    background-color: #ffffff;
+    background-color: $colorTitle;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -68,7 +67,7 @@
     text-align: center;
     line-height: 45px;
     @media (min-width: 768px) {
-      transform: translateY(50%);
+      transform: translateY(40%);
     }
     @media (min-width: 1200px) {
       transform: translateY(80%);
