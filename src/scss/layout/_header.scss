@@ -1,11 +1,15 @@
 .header {
   background-image: url(../images/cover.jpg);
   background-position: center top;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  @media (min-width: 768px) {
+    background-size: cover;
+  }
   &__menuicon {
     background-color: #0271bc;
     width: 44px;
@@ -19,6 +23,16 @@
     width: 290px;
     height: 140px;
     transform: translateY(-40%);
+    @media (min-width: 768px) {
+      width: 690px;
+      height: 260px;
+      transform: translateY(-10%);
+    }
+    @media (min-width: 1200px) {
+      width: 730px;
+      height: 320px;
+      transform: translateY(5%);
+    }
     &--maintitle {
       color: #ffffff;
       font-size: 42px;
@@ -26,12 +40,23 @@
       text-align: center;
       margin-bottom: 10px;
       font-family: "Roboto Slab", serif;
+      @media (min-width: 768px) {
+        font-size: 80px;
+        margin-bottom: 15px;
+      }
+      @media (min-width: 1200px) {
+        font-size: 100px;
+      }
     }
     &--text {
       color: #ffffff;
       font-size: 16px;
       text-align: center;
       font-family: "Roboto", sans-serif;
+      @media (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
     }
   }
   &__icondown {
@@ -42,6 +67,12 @@
     margin-bottom: 55px;
     text-align: center;
     line-height: 45px;
+    @media (min-width: 768px) {
+      transform: translateY(50%);
+    }
+    @media (min-width: 1200px) {
+      transform: translateY(80%);
+    }
     &--link {
       padding: 12px;
     }
