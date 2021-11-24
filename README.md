@@ -29,8 +29,10 @@ Además, resolver estas **interacciones**:
 4. En el hover de los botones ("Go" y "3 Reasons To Purchase") se debe incluir una transición que
    dejamos a vuestra elección (por ejemplo: color, tamaño, etc.).
 
-   - La transición añadida al pasar sobre ellos es un cambio en el background, color y tamaño del texto en el botón Go,
-     y cambio de la forma del borde, color de fondo y texto en el botón de More reasons.
+   - En el botón Go se realiza una transición cuando se pasa el puntero por encima del mismo, cambiando el color del background, de la letra y el tamaño de ésta.
+   - En el botón More reasons, la transición produce un cambio en el color del background, la letra y en la forma del botón.
 
 5. BONUS: hacer una pequeña animación en el botón del footer.
-   - La animación añadida es sobre el icono del footer, el cual clickando sobre él volvemos al inicio de la página. Aumenta su tamaño mientras gira en sentido antihorario hasta volver a su posición inicial, repitiendo la animación dos veces.
+
+   - La primera animación añadida es sobre el icono del header, que clickando nos lleva a la sección de Reasons. Realiza un movimiento hacia la dirección que indica la flecha, y se repite tres veces.
+   - La segunda animación añadida es sobre el icono del footer, el cual clickando sobre él volvemos al inicio de la página. Aumenta su tamaño mientras gira en sentido antihorario hasta volver a su posición inicial, repitiendo la animación dos veces.
