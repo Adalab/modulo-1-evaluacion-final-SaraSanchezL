@@ -58,6 +58,14 @@
       }
     }
   }
+  @keyframes down {
+    from {
+      transform: translateY(0%);
+    }
+    to {
+      transform: translateY(50%);
+    }
+  }
   &__icondown {
     background-color: $colorTitle;
     width: 45px;
@@ -66,6 +74,7 @@
     margin-bottom: 55px;
     text-align: center;
     line-height: 45px;
+    animation: down ease-out 3s 3;
     @media (min-width: 768px) {
       transform: translateY(40%);
     }
