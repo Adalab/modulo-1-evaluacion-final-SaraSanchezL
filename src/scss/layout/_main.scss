@@ -1,5 +1,4 @@
 /* Seccion uno Looking*/
-
 .containertitle {
   width: 40%;
   @media (min-width: 768px) {
@@ -69,20 +68,24 @@
       font-size: 20px;
       font-family: $fontText;
       font-weight: 500;
-      padding: 20px;
+      padding: 15px 20px;
       transition: color ease 2s, font-size linear 3s;
       &:hover {
         color: white;
         font-size: 25px;
+      }
+      @media (min-width: 768px) {
+        padding: 15px 25px;
+      }
+      @media (min-width: 1200px) {
+        padding: 15px 60px;
       }
     }
   }
 }
 
 /* Seccion dos Reasons*/
-
 /* Title and Button */
-
 .sectionreasons {
   background-color: #eff9ff;
   text-align: center;
@@ -132,12 +135,17 @@
       &:hover {
         color: yellow;
       }
+      @media (min-width: 768px) {
+        padding: 15px 30px;
+      }
+      @media (min-width: 1200px) {
+        padding: 15px 60px;
+      }
     }
   }
 }
 
 /* Articulos */
-
 .articlecontainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -153,7 +161,7 @@
     padding: 0px 80px;
   }
 }
-.article1 {
+.articleone {
   grid-row-start: 1;
   text-align: center;
   @media (min-width: 768px) {
@@ -162,7 +170,7 @@
     margin-right: 10px;
   }
 }
-.article2 {
+.articletwo {
   grid-row-start: 2;
   text-align: center;
   @media (min-width: 768px) {
@@ -170,7 +178,7 @@
     grid-row-start: 1;
   }
 }
-.article3 {
+.articlethree {
   grid-row-start: 3;
   text-align: center;
   @media (min-width: 768px) {

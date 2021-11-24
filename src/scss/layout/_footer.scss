@@ -10,7 +10,7 @@
 
 @keyframes move {
   from {
-    transform: scale(5) rotate(180deg);
+    transform: scale(3) rotate(180deg);
     background-color: #304268;
   }
   to {
@@ -26,10 +26,10 @@
   line-height: 55px;
   margin: 0px 25px;
   transform: translateY(-50%);
-  animation: move 5s ease-in 2;
+  animation: move 4s ease-in 2;
 }
 .iconlink {
-  padding: 10px;
+  padding: 12px 10px 10px;
 }
 .nav {
   margin-bottom: 20px;
@@ -57,7 +57,6 @@
 }
 
 /* Mediaqueries 768px y 1200px */
-
 @media (min-width: 768px) {
   .footer {
     flex-direction: row-reverse;
