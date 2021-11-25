@@ -206,3 +206,17 @@
     font-weight: 500;
   }
 }
+
+.specialoffer {
+  width: 100vw;
+  background-color: $colorBtn;
+}
+.specialtitle {
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  div.containeroffer {
+    display: flex;
+  }
+}
