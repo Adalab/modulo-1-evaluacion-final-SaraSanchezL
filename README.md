@@ -1,4 +1,6 @@
-# Página web Anonymous Proxy.
+# Anonymous Proxy
+
+<div align="center"> <img src="/src/images/previous-design.png" width="400px"</img> </div>
 
 Maquetar una página web con un diseño dado y unas **características**:
 
